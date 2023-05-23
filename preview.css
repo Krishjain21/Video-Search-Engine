@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+}
+.preview{
+    position: relative;
+
+    width: 360px;
+    height: 610px;
+    background: #202124;
+}
+
+.vid-card{
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 360px;
+height: 257px;
+left: calc(50% - 360px/2);
+top: 100px;
+}
+
+.bar-bottom{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 7px;
+gap: 0px;
+
+position: absolute;
+width: 360px;
+height: 66px;
+bottom: 20px;
+
+}
+
+.inner{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 81px;
+
+width: 328px;
+height: 34px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+#visit{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 20px;
+    gap: 10px;
+    
+    width: 80px;
+    height: 34px;
+    
+    /* background: #2A8CFF; */
+    border-radius: 20px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.0025em;
+
+color: #FFFFFF;
+
+
+}
+
+#close{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 12px 26px;
+gap: 10px;
+
+width: 87px;
+height: 34px;
+
+/* Text - Sub Reg */
+
+background: #5D6067;
+border-radius: 20px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* or 129% */
+
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.0025em;
+
+color: #FFFFFF;
+}
+

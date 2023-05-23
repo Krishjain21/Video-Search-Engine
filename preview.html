@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preview</title>
+    <link rel="stylesheet" href="preview.css">
+</head>
+<body>
+    <div class="preview">
+        <div class="vid-card">
+            <iframe id="video"  width="100%" height="100%" src="https://www.youtube.com/embed/nVjsGKrE6E8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+        <div class="bar-bottom">
+            <div class="inner">
+                <a href="try.html" id="change"><img src="images/visit.png" alt="" id="visit"></a>
+                <a href="try.html"><img src="images/close.png" alt="" id="visit"></a>
+
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script >
+        window.addEventListener('load', function() {
+
+            var urlParams = new URLSearchParams(window.location.search);
+            var value = urlParams.get('value');
+          
+            // Use the value as needed
+        console.log(value);
+        var embeddedLink = 'https://www.youtube.com/embed/' + value;
+        const player = document.getElementById("video");
+        player.src = embeddedLink;
+        console.log(player.src);
+
+        var visiturl='https://www.youtube.com/watch?v='+value;
+        console.log(visiturl);
+        var changeLink = document.getElementById('change');
+        console.log(visiturl);
+
+        // Change the href value
+        changeLink.href = visiturl;
+        });
+        
+    </script>
+</body>
+</html>
